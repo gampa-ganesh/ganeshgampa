@@ -2,37 +2,44 @@
 <html lang="en">
   <head>
     <title>Ganesh Gampa Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Fonts & CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <style>
       /*======================================
       //--//-->   ABOUT
       ======================================*/
-      .about-mf .box-shadow-full { padding-top: 4rem; padding-bottom: 4rem; }
-      .about-mf .about-img { margin-bottom: 2rem; }
-      .about-mf .about-img img { margin-left: 10px; }
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
 
       .skill-mf .progress {
-        margin: .5rem 0 1.2rem 0;
+        margin: 0.5rem 0 1.2rem 0;
         border-radius: 0;
-        height: .7rem;
+        height: 0.7rem;
       }
       .skill-mf .progress .progress-bar {
-        height: .7rem;
+        height: 0.7rem;
         background-color: #ffbd39;
       }
 
@@ -48,17 +55,38 @@
       }
       #typing-animation:before {
         content: "";
-        top: 0; left: 0;
-        width: 0; height: 100%;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
         background-color: #ccc;
         animation: typing-cursor 0.5s ease-in-out infinite;
       }
-      @keyframes typing { from { width: 0; } to { width: 100%; } }
-      @keyframes typing-cursor { from { width: 5px; } to { width: 0; } }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes typing-cursor {
+        from {
+          width: 5px;
+        }
+        to {
+          width: 0;
+        }
+      }
 
       /* project image zoom */
-      .zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
-      .zoom-effect:hover { transform: scale(1.1); }
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
     </style>
   </head>
 
@@ -67,7 +95,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">Ganesh Gampa</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="oi oi-menu"></span> Menu
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
@@ -89,7 +125,7 @@
           <div class="overlay"></div>
           <div class="container">
             <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+              <div class="one-third js-fullheight order-md-last img" style="background-image: url(images/bg_1.png)">
                 <div class="overlay"></div>
               </div>
               <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -100,27 +136,25 @@
                   <!-- Typing roles -->
                   <span id="typing-animation"></span>
                   <script>
-                    const typingAnimationElement = document.getElementById('typing-animation');
-                    const typingTexts = [
-                      'Software Engineer ',
-                      'Full-Stack Developer ',
-                      'Angular Developer ',
-                      'Mentor & Tutor '
-                    ];
+                    const typingAnimationElement = document.getElementById("typing-animation");
+                    const typingTexts = ["Data Analyst ", "Power BI Developer ", "SQL Analyst ", "Tableau Analyst "];
+
                     function playTypingAnimation(text) {
                       for (let i = 0; i < text.length; i++) {
-                        setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i * 200);
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 200);
                       }
                       setTimeout(() => {
-                        typingAnimationElement.textContent = '';
+                        typingAnimationElement.textContent = "";
                         playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
                       }, text.length * 200);
                     }
                     playTypingAnimation(typingTexts[0]);
                   </script>
 
-                  <br><br>
-                  <h2>Full-Stack Developer</h2>
+                  <br /><br />
+                  <h2>Data Analyst</h2>
                   <p>
                     <a href="https://github.com/gampa-ganesh" class="btn btn-primary py-3 px-4" target="_blank" rel="noopener">My works</a>
                     <a href="https://medium.com/@ganeshgampa07" class="btn btn-white btn-outline-white py-3 px-4" target="_blank" rel="noopener">Medium Posts</a>
@@ -129,8 +163,10 @@
               </div>
             </div>
           </div>
-        </div> <!-- slider-item -->
-      </div> <!-- home-slider -->
+        </div>
+        <!-- slider-item -->
+      </div>
+      <!-- home-slider -->
     </section>
 
     <!-- ABOUT -->
@@ -143,13 +179,13 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-5">
                     <div class="about-img">
-                      <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                      <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="" />
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
                       <p><span class="title-s">Name: </span> <span>Ganesh Gampa</span></p>
-                      <p><span class="title-s">Job Role: </span> <span>Full-Stack Developer</span></p>
+                      <p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
                       <p><span class="title-s">Address: </span> <span>United States</span></p>
                     </div>
                   </div>
@@ -158,20 +194,30 @@
                 <div class="skill-mf">
                   <p class="title-s">Skills</p>
 
-                  <span>React/Angular</span> <span class="pull-right">95%</span>
-                  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                  <span>Power BI</span> <span class="pull-right">95%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
 
-                  <span>Java</span> <span class="pull-right">90%</span>
-                  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                  <span>SQL (MySQL / PostgreSQL)</span> <span class="pull-right">92%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
 
-                  <span>Spring Boot</span> <span class="pull-right">90%</span>
-                  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                  <span>Tableau</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
 
-                  <span>SQL</span> <span class="pull-right">85%</span>
-                  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+                  <span>Python (Pandas / NumPy)</span> <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
 
-                  <span>Microservices Architecture</span> <span class="pull-right">80%</span>
-                  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+                  <span>KPI Analysis & Data Visualization</span> <span class="pull-right">88%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -183,17 +229,18 @@
                 <h1 class="big">About</h1>
                 <h2 class="mb-4">About Me</h2>
                 <p>
-                  I am a Java Full Stack Developer specializing in building scalable, high-performance web applications using React,
-                  Angular, and Spring Boot. I focus on creating intuitive UIs, robust backend microservices, and cloud-ready
-                  applications that deliver real business value.
+                  Data Analyst with expertise in Python, SQL, Tableau, Power BI, and R, pursuing a master’s in information systems.
+                  Proficient in developing predictive models, designing interactive dashboards, and managing large datasets. Skilled in ETL workflows,
+                  data visualization, and machine learning techniques such as logistic regression and clustering.
                 </p>
+
                 <ul class="about-info mt-4 px-md-0 px-2">
-                  <li class="d-flex"><span>Profile:</span> <span>Java Full-Stack Development</span></li>
-                  <li class="d-flex"><span>Domain:</span> <span>Automobile, E-commerce, Banking &amp; Financial Services, Healthcare, and Telecom</span></li>
-                  <li class="d-flex"><span>Education:</span> <span>Masters in Information Systems</span></li>
-                  <li class="d-flex"><span>Technologies &amp; Frameworks:</span> <span>React, Angular, Spring Boot, Hibernate, REST APIs, &amp; Microservices</span></li>
-                  <li class="d-flex"><span>Tools:</span> <span>Jenkins, Git, Docker, Kubernetes, Log4j, &amp; ELK Stack (Elasticsearch, Logstash, Kibana)</span></li>
-                  <li class="d-flex"><span>Other Skills:</span> <span>Cloud (AWS, GCP, Azure), Kafka, RabbitMQ, SQL &amp; NoSQL (MySQL, PostgreSQL, MongoDB, Cassandra)</span></li>
+                  <li class="d-flex"><span>Profile:</span> <span>Data Analytics & Business Intelligence</span></li>
+                  <li class="d-flex"><span>Domain:</span> <span>Automobile, Healthcare, Insurance, E-commerce</span></li>
+                  <li class="d-flex"><span>Education:</span> <span>Master’s in Information Systems</span></li>
+                  <li class="d-flex"><span>Core Skills:</span> <span>Power BI, Tableau, SQL, Python, KPI Reporting, Trend Analysis</span></li>
+                  <li class="d-flex"><span>Tools:</span> <span>Tableau Prep Builder, Excel (PivotTables, Macros), Git</span></li>
+                  <li class="d-flex"><span>Other:</span> <span>Data Cleaning, UI/UX Design, API Integration, Behavioral Data Analysis</span></li>
                 </ul>
               </div>
             </div>
@@ -204,11 +251,14 @@
                   <span class="number" data-number="18">0</span> <span>+</span>
                   <span>&nbsp; Projects completed</span>
                 </p>
-                <p><a href="https://www.linkedin.com/in/gampa-ganesh-513185213/" target="_blank" rel="noopener" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+                <p>
+                  <a href="https://www.linkedin.com/in/ganeshgampa/" target="_blank" rel="noopener" class="btn btn-primary py-3 px-3">LinkedIn</a>
+                </p>
               </div>
             </div>
           </div>
-        </div> <!-- row -->
+        </div>
+        <!-- row -->
       </div>
     </section>
 
@@ -220,9 +270,8 @@
             <h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
             <p>
-              Full Stack Developer specializing in Java, Spring Boot, React, and Angular, with expertise in building scalable web
-              applications, cloud-native solutions, and microservices architectures. Skilled in REST APIs, databases, and DevOps
-              tools, delivering secure and high-performance applications.
+              Data Analyst with expertise in Python, SQL, Tableau, Power BI, and R. Skilled in building interactive dashboards,
+              managing large datasets, performing KPI analysis, and delivering actionable insights to support business decision-making.
             </p>
           </div>
         </div>
@@ -231,61 +280,140 @@
           <h1 class="big-4">Experience</h1>
           <div class="underline"></div>
         </div>
-        <br>
+        <br />
 
         <div class="row">
+          <!-- GM -->
           <div class="col-md-6">
             <div class="resume-wrap ftco-animate">
-              <span class="date">March 2025 - Present</span>
-              <h2>Full-Stack Developer</h2>
-              <span class="position">General Motors | </span>
-              <span class="position">Warren, Michigan, United States</span>
+              <span class="date">Mar 2025 - Present</span>
+              <h2>Data Analyst</h2>
+              <span class="position">General Motors · Contract | </span>
+              <span class="position">Warren, Michigan, United States · Hybrid</span>
               <ul>
-                <li>Designed and developed Java Spring Boot microservices and RESTful APIs to enable interoperability across multiple AME vendors (Vecna, JBT, OTTO), supporting unified fleet management.</li>
-                <li>Built real-time dashboards using Angular, Angular Material, and GM Fabric, integrating Leaflet.js for plant maps, mission visualization, and live route tracking.</li>
-                <li>Implemented event-driven architecture with RabbitMQ Pub/Sub for mission orchestration, fleet state transitions, and high-volume asynchronous messaging.</li>
-                <li>Integrated WebSockets for real-time mission progress and fleet monitoring, improving operator visibility and system responsiveness.</li>
-                <li>Developed and optimized PostgreSQL queries and schemas for storing mission statistics, routing data, and fleet metrics, improving performance and maintainability.</li>
-                <li>Enhanced code quality through JUnit/Mockito testing, GitHub Actions CI/CD pipelines, and automated GHAS, Trivy, and license scans to ensure compliance and reliability.</li>
-                <li>Collaborated with cross-functional teams in Agile sprints to deliver scalable, secure, and vendor-agnostic fleet management solutions.</li>
+                <li>
+                  Analyzed operational and fleet performance data across multiple autonomous mobile equipment (AME) vendors (Vecna, JBT, OTTO) to
+                  deliver unified insights on utilization, mission efficiency, throughput, and system reliability.
+                </li>
+                <li>
+                  Designed, developed, and maintained interactive dashboards and reports using Power BI and Looker, enabling stakeholders to monitor
+                  real-time and historical KPIs such as mission completion rates, route efficiency, wait times, and fleet utilization.
+                </li>
+                <li>Built and managed database change management scripts using Liquibase, ensuring controlled schema evolution, versioning, and data consistency.</li>
+                <li>Developed and optimized SQL queries, views, and analytical models in PostgreSQL to support scalable reporting, ad-hoc analysis, and executive dashboards.</li>
+                <li>
+                  Processed and analyzed high-volume event and transactional data generated from mission orchestration systems to identify trends, bottlenecks,
+                  and performance anomalies.
+                </li>
+                <li>Implemented data validation, reconciliation, and quality checks to ensure accuracy and reliability of datasets used for analytics and reporting.</li>
+                <li>
+                  Collaborated with product owners, operations teams, and engineering stakeholders to translate business requirements into actionable insights,
+                  KPIs, and data-driven recommendations within Agile sprints.
+                </li>
               </ul>
             </div>
           </div>
 
+          <!-- Acentra -->
           <div class="col-md-6">
             <div class="resume-wrap ftco-animate">
-              <span class="date">Jul 2020 - Nov 2022</span>
-              <h2>Full-Stack Developer</h2>
-              <span class="position">Mamagang Services Private Limited | </span>
-              <span class="position">Hyderabad, Telangana</span>
+              <span class="date">Mar 2024 - Feb 2025</span>
+              <h2>Data Analyst</h2>
+              <span class="position">Acentra Health | </span>
+              <span class="position">McLean, VA · Remote</span>
               <ul>
-                <li>Developed full-stack features using Java, Spring Boot, React, and MySQL to enhance platform functionality and user engagement.</li>
-                <li>Built and optimized backend services, integrated RESTful APIs, and implemented authentication/authorization with Spring Security (JWT, OAuth 2.0).</li>
-                <li>Created responsive user interfaces with React and Angular to improve customer experience and interactivity on the e-commerce platform.</li>
-                <li>Utilized SQL and Python (Pandas, NumPy, Seaborn) to analyze sales data and customer behavior, generating actionable insights.</li>
-                <li>Developed interactive dashboards (Tableau/Power BI) to visualize sales trends, user engagement, and inventory performance.</li>
-                <li>Contributed to demand forecasting and inventory optimization, reducing stock wastage and ensuring better product availability.</li>
-                <li>Strengthened expertise in both software development and data analytics, applying a data-driven approach to problem-solving in a fast-paced environment.</li>
+                <li>
+                  Analyzed Medicaid and Medicare claims and encounter data using SQL to monitor claims intake, adjudication status, denials, and turnaround time (TAT)
+                  for state and federal healthcare programs.
+                </li>
+                <li>
+                  Built and maintained Power BI / Tableau dashboards used by operations and clinical teams to track daily and monthly KPIs such as claims volume,
+                  approval/denial rates, average processing time, provider utilization, and cost trends.
+                </li>
+                <li>
+                  Performed root-cause analysis on claim denials and processing delays by drilling into diagnosis codes, procedure codes (CPT/HCPCS), provider data,
+                  and eligibility attributes.
+                </li>
+                <li>Supported care management and quality oversight teams by analyzing utilization patterns, high-cost members, and service gaps to prioritize activities.</li>
+                <li>Conducted trend and variance analysis to identify increases in service utilization, cost drivers, and provider performance changes across reporting periods.</li>
+                <li>Delivered weekly and monthly stakeholder reports to program managers and leadership, translating analytical findings into clear insights and recommendations.</li>
+                <li>Collaborated with clinical, policy, and IT teams to define standardized healthcare metrics and align reporting with compliance guidelines.</li>
+                <li>Ensured data accuracy and compliance by validating claims data, reconciling source systems with reporting outputs, and documenting KPI definitions.</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <br><br>
+        <br /><br />
+
+        <div class="row">
+          <!-- OneInsure -->
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Dec 2021 - Nov 2022</span>
+              <h2>Data Analyst</h2>
+              <span class="position">OneInsure | </span>
+              <span class="position">Mumbai, Maharashtra, India · On-site</span>
+              <ul>
+                <li>
+                  Performed SQL-based data analysis on insurance policy, customer, claims, and renewal datasets to support operational reporting and business insights
+                  across life, health, motor, and travel insurance products.
+                </li>
+                <li>
+                  Designed and developed Power BI / Tableau dashboards to track key insurance KPIs such as policy issuance trends, renewal rates, claim settlement turnaround time (TAT),
+                  customer engagement, and service utilization.
+                </li>
+                <li>Conducted trend analysis and variance analysis to identify patterns in policy conversions, claim volumes, renewal behavior, and service performance.</li>
+                <li>Prepared stakeholder-facing reports and dashboards summarizing analytical findings, performance metrics, and actionable insights.</li>
+                <li>Collaborated with business, operations, and customer support teams to gather reporting requirements and translate them into standardized metrics and dashboards.</li>
+                <li>Supported decision-making with ad-hoc analysis on policy comparison effectiveness, claim assistance performance, and customer experience improvements.</li>
+                <li>Ensured data accuracy through validation checks, reconciliation of source systems with reporting datasets, and documentation of metric definitions.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mamagang -->
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Jul 2020 - Nov 2021</span>
+              <h2>Data Analyst</h2>
+              <span class="position">Mamagang Services Private Limited | </span>
+              <span class="position">Hyderabad, Telangana, India · Hybrid</span>
+              <ul>
+                <li>
+                  Analyzed sales, customer behavior, and engagement data for an e-commerce and retail platform to identify trends, optimize product performance,
+                  and support data-driven business decisions.
+                </li>
+                <li>Wrote and optimized SQL queries on MySQL to extract, transform, and analyze transactional and customer data for reporting and ad-hoc analysis.</li>
+                <li>
+                  Built interactive dashboards and reports using Power BI and Tableau to track KPIs such as sales growth, conversion rates, inventory turnover,
+                  and customer retention.
+                </li>
+                <li>Conducted trend analysis and root-cause analysis to understand fluctuations in demand, product performance, and user engagement.</li>
+                <li>Applied Python (Pandas, NumPy) for data cleaning, exploratory data analysis (EDA), and visualization to support forecasting and performance analysis.</li>
+                <li>Supported demand forecasting and inventory optimization to reduce stock wastage and improve product availability and fulfillment efficiency.</li>
+                <li>Collaborated with product, marketing, and operations teams to translate requirements into insights, dashboards, and recommendations.</li>
+                <li>Ensured reporting consistency through validation checks, reconciliations, and documentation of metrics and reporting logic.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <br /><br />
 
         <div class="row">
           <h1 class="big-4">Education</h1>
           <div class="underline"></div>
         </div>
-        <br>
+        <br />
 
         <div class="row">
           <div class="col-md-6">
             <div class="resume-wrap ftco-animate">
-              <span class="date">Dec 2023 - Dec 2024</span>
-              <h2>Master’s in Information Systems</h2>
+              <span class="date">Dec 2022 - Dec 2024</span>
+              <h2>Master of Science in Computer Science</h2>
               <span class="position">Central Michigan University</span>
-              <p class="mt-4">Grade: 3.7/4.00</p>
+              <p class="mt-4">GPA: 3.7/4.00</p>
             </div>
           </div>
 
@@ -308,16 +436,26 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample projects on Python, R, MySQL, Tableau &amp; ML.</p>
+            <p>Below are sample analytics projects using Python, R, SQL, Tableau, and BI dashboards.</p>
           </div>
         </div>
 
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a href="https://github.com/gampa-ganesh/DocLink-Healthcare-Appointment-System" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');" target="_blank" rel="noopener"></a>
+              <a
+                href="https://github.com/gampa-ganesh/DocLink-Healthcare-Appointment-System"
+                class="block-20 zoom-effect"
+                style="background-image: url('images/proj_1.jpg')"
+                target="_blank"
+                rel="noopener"
+              ></a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="https://github.com/gampa-ganesh/DocLink-Healthcare-Appointment-System" target="_blank" rel="noopener">DocLink Healthcare Appointment System using Python</a></h3>
+                <h3 class="heading">
+                  <a href="https://github.com/gampa-ganesh/DocLink-Healthcare-Appointment-System" target="_blank" rel="noopener"
+                    >DocLink Healthcare Appointment System using Python</a
+                  >
+                </h3>
                 <p>The DocLink Healthcare Appointment System connects patients and doctors, streamlining scheduling with personalized dashboards and real-time availability.</p>
               </div>
             </div>
@@ -325,9 +463,22 @@
 
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a href="https://github.com/gampa-ganesh/Analysis-and-Modeling-of-Indian-Premier-League-IPL-2021-Matches-Using-R" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');" target="_blank" rel="noopener"></a>
+              <a
+                href="https://github.com/gampa-ganesh/Analysis-and-Modeling-of-Indian-Premier-League-IPL-2021-Matches-Using-R"
+                class="block-20 zoom-effect"
+                style="background-image: url('images/proj_2.jpg')"
+                target="_blank"
+                rel="noopener"
+              ></a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="https://github.com/gampa-ganesh/Analysis-and-Modeling-of-Indian-Premier-League-IPL-2021-Matches-Using-R" target="_blank" rel="noopener">Analysis & Modeling of IPL 2021 (R)</a></h3>
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/gampa-ganesh/Analysis-and-Modeling-of-Indian-Premier-League-IPL-2021-Matches-Using-R"
+                    target="_blank"
+                    rel="noopener"
+                    >Analysis & Modeling of IPL 2021 (R)</a
+                  >
+                </h3>
                 <p>Comprehensive analysis with statistical techniques and predictive modeling to derive actionable insights and predictions.</p>
               </div>
             </div>
@@ -335,16 +486,29 @@
 
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry">
-              <a href="https://public.tableau.com/views/DataPlusMovies2000-2023KnowMyFavoriteHeroes/pawan?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');" target="_blank" rel="noopener"></a>
+              <a
+                href="https://public.tableau.com/views/DataPlusMovies2000-2023KnowMyFavoriteHeroes/pawan?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+                class="block-20 zoom-effect"
+                style="background-image: url('images/proj_3.jpg')"
+                target="_blank"
+                rel="noopener"
+              ></a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="https://public.tableau.com/views/DataPlusMovies2000-2023KnowMyFavoriteHeroes/pawan?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">Iron Viz: Interactive Movie Dashboard</a></h3>
+                <h3 class="heading">
+                  <a
+                    href="https://public.tableau.com/views/DataPlusMovies2000-2023KnowMyFavoriteHeroes/pawan?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+                    target="_blank"
+                    rel="noopener"
+                    >Iron Viz: Interactive Movie Dashboard</a
+                  >
+                </h3>
                 <p>Interactive Tableau dashboard analyzing movie trends (2000–2023) with intuitive layout and analytical depth.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <br>
+        <br />
 
         <!-- COUNTERS -->
         <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
@@ -392,14 +556,15 @@
                 <h2>More projects on <span>Github</span></h2>
                 <div class="heading">
                   <h4>I love to solve business problems &amp; uncover hidden data stories</h4>
-                  <br>
+                  <br />
                   <p><a href="https://github.com/gampa-ganesh" class="btn btn-primary py-3 px-5" target="_blank" rel="noopener">GitHub</a></p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </div> <!-- container -->
+      </div>
+      <!-- container -->
     </section>
 
     <!-- CONTACT -->
@@ -447,12 +612,14 @@
                 <span class="icon-linkedin"></span>
               </div>
               <h3 class="mb-4">LinkedIn Profile</h3>
-              <p><a href="https://www.linkedin.com/in/gampa-ganesh-513185213/" target="_blank" rel="noopener">Visit My Profile</a></p>
+              <p>
+                <a href="https://www.linkedin.com/in/ganeshgampa/" target="_blank" rel="noopener">Visit My Profile</a>
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="container"><br><br><div class="row justify-content-center"></div></div>
+        <div class="container"><br /><br /><div class="row justify-content-center"></div></div>
       </div>
     </section>
 
@@ -462,11 +629,9 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy;<script>document.write(new Date().getFullYear());</script>
               All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i>
               by <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
         </div>
@@ -476,8 +641,8 @@
     <!-- LOADER -->
     <div id="ftco-loader" class="show fullscreen">
       <svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
       </svg>
     </div>
 
